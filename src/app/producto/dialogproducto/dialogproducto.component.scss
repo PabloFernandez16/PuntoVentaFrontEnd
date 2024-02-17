@@ -1,0 +1,56 @@
+
+.container {
+  background: linear-gradient(90deg, #C7C5F4, #0878c8);
+}
+
+.mat-form{
+  display: flex;
+  background-color: #ffffff00;
+}
+  
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho dentro del formulario */
+    grid-gap: 16px; /* Espacio entre las columnas dentro del formulario */
+  }
+  
+  .column {
+    display: grid;
+    grid-gap: 12px; 
+  }
+
+  .actions {
+    display: flex;
+    justify-content:flex-end;
+    gap: 5%;
+  }
+
+  .img {
+    display: grid;
+    grid-gap: 2px; 
+    padding: 3% 8%;
+  }
+  .input-img
+  {
+    display: none;
+  }
+  .img-prod {
+    width: 100px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .form-container {
+      display: block;
+      justify-content: center;
+    }
+
+    .full-width {
+      width: 100%;
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 5%;
+    }
+  }

@@ -1,0 +1,87 @@
+/* Estilos para la barra de herramientas */
+.custom-toolbar {
+  background: linear-gradient(90deg, #36aaba, #0f6da7);
+  height: 8vh;
+}
+
+.brand {
+  color: #11397c;
+  font-weight: bold;
+}
+
+.head-spacer {
+  flex: 1;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 3px;
+  font-size: 10px;
+  min-width: 15px;
+  text-align: center;
+}
+.mat-icon-logout {
+  color: rgb(102, 3, 3);
+}
+
+/* Estilos para el contenedor de la barra lateral */
+.custom-sidenav-container {
+  background: #8da6b1;
+}
+
+/* Estilos para la lista de navegación en la barra lateral */
+.custom-nav-list {
+  padding: 20px;
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  height: 50px;
+  background: #36aaba;
+  box-shadow: 0px 0px 8px #312692;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.card:hover {
+  background-color: #055b94;
+  color: #07060a;
+}
+
+/* Estilos para el contenido de la barra lateral */
+.custom-sidenav-content {
+  background: linear-gradient(90deg, #C7C5F4, #0878c8);
+  height: 92vh;
+  overflow-y: auto;
+}
+
+.link-container mat-icon {
+  margin-right: 8px; 
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 700px) {
+  .card .custom-label {
+    display: none;
+  }
+  
+  .btn {
+    max-width: 20px;
+  }
+
+  .custom-nav-list {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+
+<div class="card-container">
+    <mat-card class="product-card">
+        <mat-card-header>
+            <div class="example-header-image"></div>
+            <mat-card-title class="card-title">{{ producto?.nombre }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p class="card-id"> {{ producto?.descripcion }}</p>
+        </mat-card-content>
+        <mat-card-content>
+            <p class="card-price">Precio: {{ producto?.precioVenta | currency }}</p>
+        </mat-card-content>
+        
+
+        <mat-card-content>
+            <div class="mat-dialog-content">
+                <button mat-icon-button (click)="decrementarCantidad()">
+                <mat-icon>remove</mat-icon>
+                </button>
+                <label>{{ cantidad }}</label>
+                <button mat-icon-button (click)="incrementarCantidad()">
+                <mat-icon>add</mat-icon>
+                </button>
+            </div>
+        </mat-card-content>
+
+
+
+
+        <mat-card-actions>
+            <button class="btn-add" (click)="addCarrito()" mat-button color="primary">
+                <mat-icon>shopping_cart</mat-icon> agregar al carrito
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+
+<!--
+<div class="card-container">
+    <ng-container *ngFor="let element of lista">
+        <mat-card class="product-card">
+            <mat-card-header>
+                <div class="example-header-image"></div>
+                <mat-card-title class="card-title">{{ element.descripcion }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p class="card-price">Precio: {{ element.precioVenta | currency }}</p>
+            </mat-card-content>
+            <mat-card-content>
+                <p class="card-id">id: {{ element.id }}</p>
+            </mat-card-content>
+  
+            <div class="mat-dialog-content">
+                <mat-form-field>
+                    <mat-label>Cantidad: </mat-label>
+                    <input matInput type="number" step="1" [(ngModel)]="cantidad">
+                </mat-form-field>
+            </div>
+  
+            <mat-card-actions>
+                <button class="btn-add" (click)="addCarrito(element.id)" mat-button color="primary">
+                    <mat-icon>shopping_cart</mat-icon> agregar al carrito
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </ng-container>
+  </div>
+-->
+
+

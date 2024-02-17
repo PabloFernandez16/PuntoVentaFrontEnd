@@ -1,0 +1,75 @@
+
+
+<div class="container">
+  <h1 mat-dialog-title>
+    {{ producto != null ? "Editar Producto" : "Nuevo Producto" }}
+  </h1>
+
+  <div class="form-container">
+    <div class="column">
+      <div mat-dialog-content class="full-width">
+        <mat-form-field class="full-width">
+          <mat-label>Nombre: </mat-label>
+          <input matInput [(ngModel)]="nombre" />
+        </mat-form-field>
+      </div>
+
+      <div mat-dialog-content class="full-width">
+        <mat-form-field class="full-width">
+          <mat-label>Descripción: </mat-label>
+          <input matInput [(ngModel)]="descripcion" />
+        </mat-form-field>
+      </div>
+      
+      <div mat-dialog-content class="full-width">
+        <mat-form-field class="full-width">
+          <mat-label>PrecioVenta: </mat-label>
+          <input matInput [(ngModel)]="precioVenta" type="number" />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="column">
+      <div mat-dialog-content class="full-width">
+        <mat-form-field class="full-width">
+          <mat-label>PrecioCompra: </mat-label>
+          <input matInput [(ngModel)]="precioCompra" type="number" />
+        </mat-form-field>
+      </div>
+      <div mat-dialog-content class="full-width">
+        <mat-form-field class="full-width">
+          <mat-label>CantidadStock: </mat-label>
+          <input matInput [(ngModel)]="cantidadStock" type="number" />
+        </mat-form-field>
+      </div>
+
+  </div>
+  <div mat-dialog-actions class="actions">
+    <button mat-raised-button (click)="close()">
+      <mat-icon>cancel</mat-icon>Cancelar
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="producto != null ? editProducto() : addProducto()"
+    >
+      <mat-icon>save</mat-icon>Guardar
+    </button>
+  </div>
+</div>
+
+<!--
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label>Categoria: </mat-label>
+        <mat-select [(ngModel)]="categoria">
+            <mat-option value="HERRAMIENTA">HERRAMIENTA</mat-option>
+            <mat-option value="MUEBLE">MUEBLE</mat-option>
+            <mat-option value="PINTURA">MUEBLE</mat-option>
+            <mat-option value="ELECTRODOMESTICO">MUEBLE</mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+
+-->

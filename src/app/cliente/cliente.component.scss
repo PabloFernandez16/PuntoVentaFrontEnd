@@ -1,0 +1,28 @@
+
+.btn {
+    width: 400px;
+}
+.btn-add{
+    padding: 10px;
+}
+  
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 0px;
+    }
+    .btn-add{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    .btn {
+        width: 50%;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        width: 100%;
+    } 
+    
+}

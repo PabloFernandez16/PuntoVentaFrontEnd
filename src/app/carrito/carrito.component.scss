@@ -1,0 +1,84 @@
+.mat-card {
+  margin-bottom: 1%;
+}
+
+.flex{
+  display: flex;
+  
+}
+.select-container {
+  max-width: 400px;
+}
+.label-pagar{
+  white-space: nowrap; 
+}
+
+.mat-card-actions {
+  align-items: flex-end;  // Alinea los elementos al final por defecto
+}
+  
+.content-container {
+  flex-grow: 1; //Hace que el contenido ocupe todo el espacio restante 
+}
+
+.action-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+
+
+
+
+.quant-input {
+  display: flex;
+  align-items: center;
+}
+.quant-input button {
+  min-width: 25px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .flex{
+    display: block;
+  }
+  
+  .select-container{
+    width: auto;
+  }
+  .mat-form-field{
+    width: 100%;
+  }
+  .mat-card-actions{
+    align-items: flex-start;
+  }
+    .btn {
+        width: 100%;
+    }
+    .btn-add{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .flex {
+    display: block;  
+  }
+  
+
+  .label-pagar{
+    white-space: nowrap; 
+  }
+  .input-pagar input{
+    width: 50%;
+  }
+
+}
+
+
+  
+  

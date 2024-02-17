@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+//btn
+
+//tablas
+
+.container {
+  padding: 2%;
+}
+.mat-table-container {
+    width: 100%;
+    overflow-x: auto;  
+  }
+  
+  /* Estilos para las celdas de la cabecera */
+  .header-cell-id{
+    max-width: 50px;
+    color: rgb(39, 9, 82);
+    font-style: bold;  
+  }
+  .header-cell {
+    min-width: 100px;
+    color: rgb(39, 9, 82);
+    font-style: bold;  
+  }
+
+  .mat-cell {
+    white-space: nowrap;  
+  }

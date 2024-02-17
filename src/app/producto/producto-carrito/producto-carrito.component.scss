@@ -1,0 +1,30 @@
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.product-card {
+    align-items: center;
+    
+  background: linear-gradient(90deg, #706db5, #0086e6);
+    //background-color: rgb(120, 167, 184);
+    width: 300px;
+    margin: 16px;
+}
+
+.btn-add {
+    background: #29611e;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    }
+
+.btn-add:hover {
+    background: #3932ca;
+    transform: scale(1.1);
+}
